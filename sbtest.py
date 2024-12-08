@@ -9,4 +9,6 @@ marks = [23, 25, 27, 20, 4, 60, 7, 8, 9]
 # Correct DataFrame creation
 sample_df = pd.DataFrame({"rollno": rollno, "marks": marks})
 
-print(sample_df)
+
+sns.lineplot(X='rollno', y="marks",data=sample_df)
+plt.title("student marks")
